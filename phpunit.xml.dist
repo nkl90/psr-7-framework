@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- https://phpunit.readthedocs.io/en/latest/configuration.html -->
+<phpunit bootstrap="./vendor/autoload.php"
+        colors="true"
+        verbose="true"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true">
+    <testsuites>
+        <testsuite name="Framework Test Suite">
+            <directory>./tests</directory>
+        </testsuite>
+    </testsuites>
+    <filters>
+        <whitelist>
+            <directory suffix=".php">./frameworks/</directory>
+        </whitelist>
+    </filters>
+</phpunit>
